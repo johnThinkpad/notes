@@ -1,0 +1,135 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+
+<head> 
+	<meta charset="UTF-8"> 
+	<meta name="viewport" content= 
+		"width=device-width, initial-scale=1.0"> 
+	<style> 
+		body { 
+			font-family: Arial, sans-serif; 
+			margin: 0; 
+			padding: 0; 
+		} 
+
+		header { 
+			background-color: #000000; 
+			color: #ffffff; 
+			text-align: center; 
+		} 
+
+		nav { 
+			background-color: #000000; 
+            color: #fff;
+			padding: 10px; 
+		} 
+
+		nav a { 
+			color: #000000; 
+			text-decoration: none; 
+			padding: 10px; 
+			margin-right: 10px; 
+			display: inline-block; 
+		} 
+
+		.container { 
+			display: flex; 
+			justify-content: space-between; 
+			max-width: 95%; 
+			margin: 0 auto; 
+			padding: 20px; 
+		} 
+
+		article p { 
+			text-align: justify; 
+		} 
+
+		main { 
+			flex: 2; 
+		} 
+
+		article { 
+			margin-bottom: 20px; 
+			padding: 10px 20px; 
+			border: 1px solid rgb(0, 0, 0); 
+			margin-right: 10px; 
+		} 
+
+		aside { 
+			flex: 1; 
+			background-color: #000000; 
+			padding: 10px; 
+		} 
+
+		footer { 
+			background-color: #000000; 
+			color: #fff; 
+			text-align: center; 
+			position: fixed; 
+			bottom: 0; 
+			width: 100%; 
+		} 
+	</style> 
+	<title>thinking</title> 
+</head> 
+
+<body> 
+	<header> 
+		<h1>johnThinkpads notes</h1> 
+		<p>notes and instructions, webpage copied from geeksforgeeks lmao</p> 
+	</header> 
+
+	<nav> 
+		<a href="#">Home</a> 
+	</nav> 
+
+	<div class="container"> 
+		<main> 
+			<article> 
+				<h2>about</h2> 
+				<p class="post-meta"> 
+					Published on September 4th, 2025 by john thinkpad
+				</p> 
+				<p> 
+					i am john thinkpad. my name is not john but i do use a thinkpad. 
+                    i recently switched over to linux and am fucking around making 
+                    stuff. my first project was figuring out a file sharing thing that allows 
+                    you to send and recieve files to and from my thinkpad by 
+                    connecting to its hotspot. its probably been done a billion 
+                    times and isnt too complex but its always nice to start somewhere. 
+				</p> 
+			</article> 
+
+			<article> 
+				<h2>file sharing thing</h2> 
+				<p class="post-meta"> 
+					Published on September 4th again
+				</p> 
+				<p> 
+					uses a devices hotspot to share files. used uploadserver, python
+                    and chatgpt for the webpage html becasue i cant think for myself.
+                    1. run hotspot - nmcli connection up [hotspot name]
+                    2. cd into whatever you want to share from/to
+                    3. run python3 -m uploadserver
+                    4. connect by using localhost/0.0.0.0:8000 on main machine
+                    4.5 connect by using devices IP when on hotspot. 
+                    5. for downloading files you can just use python3 -m http.server 8000
+                    6. to kill, turn off hotspot in settings and run lsof -i 8000
+                    6.5 run kill [whatever the PIP is]
+                    theses notes are reaaally poorly written but if you need help ill try my
+                    best to assist. 
+                    i didnt actually make anything here if it wasnt clear earlier
+
+				</p> 
+			</article> 
+
+			
+		</main>
+	</div> 
+
+	<footer> 
+		<p>© 2025 john thinkpad all rights reserved.</p> 
+	</footer> 
+</body> 
+
+</html>
